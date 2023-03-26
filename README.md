@@ -8,7 +8,7 @@ This [tpm](https://github.com/tmux-plugins/tpm) tmux plugin will change the tmux
 ![Demo of changing system theme](demo.gif)
 
 
-For example I use a Solarized in all my programs and for tmux I use [seebi/tmux-colors-solarized](https://github.com/seebi/tmux-colors-solarized). I have a local clone of this repo (in my dotfiles as a submodule). This repo provides a light theme `tmuxcolors-light.conf` and a dark theme `tmuxcolors-dark.conf`. With this tmux plugin, I have configured so that when the system appearance mode changes, the corresponding tmux theme will be used.
+For example I use a Solarized in all my programs that support it. For tmux I use [seebi/tmux-colors-solarized](https://github.com/seebi/tmux-colors-solarized) which is locally cloed (in my dotfiles as a submodule). This tmux theme repo provides a light theme `tmuxcolors-light.conf` and a dark theme `tmuxcolors-dark.conf`. With this tmux plugin, I have configured so that when the system appearance mode changes, the corresponding tmux theme will be used.
 
 Hats off to [dark-notify](https://github.com/cormacrelf/dark-notify) which this plugin is built up on!
 
