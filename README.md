@@ -46,7 +46,7 @@ Hats off to [dark-notify](https://github.com/cormacrelf/dark-notify) which this 
      ```
 3. Install the plugin with `<prefix>I`, unless you changed [tpm's keybindings](https://github.com/tmux-plugins/tpm#key-bindings).
 4. Try toggle the system's appearance mode from System Settings and see that the tmux theme is changing
-  * To verify, you can `ls -l ~/.local/state/tmux/tmux-dark-notify-theme.conf` to see that it is linked to the light or dark theme you configured.
+   * To verify, you can `ls -l ~/.local/state/tmux/tmux-dark-notify-theme.conf` to see that it is linked to the light or dark theme you configured.
 
 
 
