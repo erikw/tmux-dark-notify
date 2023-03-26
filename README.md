@@ -10,6 +10,8 @@ This tmux plugin will change the tmux theme automatically when the system change
 
 For example I use a Solarized in all my programs and for tmux I use [seebi/tmux-colors-solarized](https://github.com/seebi/tmux-colors-solarized). I have a local clone of this repo (in my dotfiles as a submodule). This repo provides a light theme `tmuxcolors-light.conf` and a dark theme `tmuxcolors-dark.conf`. With this tmux plugin, I have configured so that when the system appearance mode changes, the corresponding tmux theme will be used.
 
+Hats off to [dark-notify](https://github.com/cormacrelf/dark-notify) which this plugin is built up on!
+
 # Setup
 ## Requirements
 * macOS - [dark-notify](https://github.com/cormacrelf/dark-notify) is only for mac
@@ -62,6 +64,5 @@ For example I use a Solarized in all my programs and for tmux I use [seebi/tmux-
 
 
 # TODOs
-* git tag
 * Add plugin to https://github.com/tmux-plugins/list
 * Mention to dark-notify
