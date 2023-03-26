@@ -4,3 +4,9 @@
 [![OSS Lifecycle](https://img.shields.io/osslifecycle/erikw/tmux-dark-notify)](https://github.com/Netflix/osstracker)
 
 TBD...
+
+
+## Requirements
+* Bash
+* Homebrew
+* dark-notify
