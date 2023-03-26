@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# This script will set the tmux theme in use by rewriting a symlink and then sourcing the theme.
+# This script will source tmux themes depending on the argument light/dark.
 # The dark/light theme paths should be configured in tmux user options (@-prefixed).
 
 set -o errexit
@@ -18,11 +18,6 @@ Set tmux dark/light mode.
 Usage: $ ${SCRIPT_NAME} light|dark
 EOF
 
-
-
-TMUX_STATED=${XDG_STATE_HOME:-$HOME/.local/state}/tmux
-! [ -d $TMUX_STATED ] && mkdir -p $TMUX_STATED
-TMUX_THEME_LINK=$TMUX_STATED/tmux-theme-mode.conf
 
 tmux_get_option() {
 	local option=$1
@@ -49,7 +44,6 @@ tmux_set_theme_mode() {
 		exit 2
 	fi
 	tmux source "$theme_path"
-	ln -sf "$theme_path" $TMUX_THEME_LINK
 }
 
 mode=
