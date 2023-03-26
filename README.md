@@ -6,6 +6,7 @@
 TBD...
 
 TODO GIF video showing theme toggle.
+TODO git tag
 
 ## Requirements
 * Bash
