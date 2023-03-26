@@ -37,7 +37,7 @@ Hats off to [dark-notify](https://github.com/cormacrelf/dark-notify) which this 
      ```conf
      source-file ~/.local/state/tmux/tmux-dark-notify-theme.conf
      ```
-   * Thus in total, the relevant section of you `tmux.conf` could look like:
+   * Thus in summary, the relevant section of you `tmux.conf` could look like:
      ```conf
      set -g @plugin 'erikw/tmux-dark-notify'
      set -g @dark-notify-theme-path-light '$HOME/.repos/tmux-colors-solarized/tmuxcolors-light.conf'
