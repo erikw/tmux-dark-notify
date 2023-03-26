@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-# Requirements: brew install dark-notify
+# This script will set the tmux theme in use by rewriting a symlink and then sourcing the theme.
+# The dark/light theme paths should be configured in tmux user options (@-prefixed).
 
 set -o errexit
 set -o pipefail

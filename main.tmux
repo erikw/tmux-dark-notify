@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
-
-touch /tmp/tmux-dark-run-main.tmux
-#set -xi
-#exec 2>/tmp/tmux-dark-notify.log
+# Entry point for this plugin. This is loaded possibly multiple times on tmux start or session restore. Outsource handling of multiple running instances to the runner. This script just starts the runner in the background.
 
 set -o errexit
 set -o pipefail

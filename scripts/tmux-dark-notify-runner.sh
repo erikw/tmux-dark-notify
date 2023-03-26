@@ -1,16 +1,9 @@
 #!/usr/bin/env bash
-touch /tmp/tmux-dark-run-runner.tmux
-#set -xi
-#exec 2>/tmp/tmux-dark-notify.log
-
-log_path="/tmp"
-log_file="${log_path}/tmux-dark-notify.log"
-exec >  >(tee -a "$log_file")
-exec 2> >(tee -a "$log_file" >&2)
-set -x
+# This script will run dark-notify(1) in a while loop (in case it would exit).
 
 set -o errexit
 set -o pipefail
+[[ "${TRACE-0}" =~ ^1|t|y|true|yes$ ]] && set -o xtrace
 
 CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 SCRIPT_NAME="$(basename $0)"
