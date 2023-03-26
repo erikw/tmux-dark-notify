@@ -5,6 +5,7 @@
 
 TBD...
 
+TODO GIF video showing theme toggle.
 
 ## Requirements
 * Bash
