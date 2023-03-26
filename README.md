@@ -61,8 +61,3 @@ Hats off to [dark-notify](https://github.com/cormacrelf/dark-notify) which this 
   * Open System Settings > Keyboard > Keyboard shortcuts (button) > Services
     * Find the `apperance_toggle` service we just created under the General category
     * Bind it to a shortcut e.g.  CTRL+OPT+CMD+t (this shortcut was used when feature was first introduced in the OS in beta).
-
-
-# TODOs
-* Add plugin to https://github.com/tmux-plugins/list
-* Mention to dark-notify
