@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 # This script will set the tmux theme in use by rewriting a symlink and then sourcing the theme.
 # The dark/light theme paths should be configured in tmux user options (@-prefixed).
+#
+# Why write symlink and not just source? Because if tmux.conf uses the tmux-clear plugin and tmux.conf is resourced, then this plugin might not load. Then it's convenient to also have a "tmux source-file path/to/the/symlink-theme.conf" so that the right theme is still loaded.
 
 set -o errexit
 set -o pipefail
@@ -22,7 +24,7 @@ EOF
 
 TMUX_STATED=${XDG_STATE_HOME:-$HOME/.local/state}/tmux
 ! [ -d $TMUX_STATED ] && mkdir -p $TMUX_STATED
-TMUX_THEME_LINK=$TMUX_STATED/tmux-theme-mode.conf
+TMUX_THEME_LINK=$TMUX_STATED/tmux-dark-notify-theme.conf
 
 tmux_get_option() {
 	local option=$1
@@ -48,7 +50,7 @@ tmux_set_theme_mode() {
 		echo "The configured theme is not readable: $theme_path" >&2
 		exit 2
 	fi
-	tmux source "$theme_path"
+	tmux source-file "$theme_path"
 	ln -sf "$theme_path" $TMUX_THEME_LINK
 }
 
