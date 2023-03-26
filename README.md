@@ -52,8 +52,8 @@ Hats off to [dark-notify](https://github.com/cormacrelf/dark-notify) which this 
 
 # Tips on more light/dark configuration
 * NeoVim: set up [dark-notify](https://github.com/cormacrelf/dark-notify) to change our nvim theme as well!
-* Use [iTerm](https://iterm2.com/downloads.html) >=3.5 (currently in beta) as it as support for automatically change the whole terminal theme when the system appearance mode changes. This is what I have in the demo GIF at the top of this file.
-* Create a global keyboard shortcut to toggle mode in macOS
+* [iTerm2](https://iterm2.com/downloads.html): Use version >=3.5 (currently in beta) as it as support for automatically change the whole terminal theme when the system appearance mode changes. This is what I have in the demo GIF at the top of this file.
+* Global keyboard shortcut: Create a global keyboard shortcut to toggle mode in macOS.
   * Open Automator.app
     * Create a new `Quick Action`.
     * Drag from the list to the left the  "Change System Appearace" to the areaon the rnage, and set "Change Appearance" to "Toggle Light/Dark".
