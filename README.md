@@ -35,16 +35,18 @@ Hats off to [dark-notify](https://github.com/cormacrelf/dark-notify) which this 
      set -g @dark-notify-theme-path-light '$HOME/.repos/tmux-colors-solarized/tmuxcolors-light.conf'
      set -g @dark-notify-theme-path-dark '$HOME/.repos/tmux-colors-solarized/tmuxcolors-dark.conf'
      ```
-   * To cover some corner cases e.g. if you use the plugin [tmux-reset](https://github.com/hallazzang/tmux-reset), I recommend adding this as well as a fallback in case this plugin is not run in all scenarios. **Remove any other** `source-file` for theme you have of course!
+   * To cover some corner cases e.g. if you use the plugin [tmux-reset](https://github.com/hallazzang/tmux-reset), I recommend adding this explicit source of the theme as well as a fallback in case this plugin is not run in all scenarios. The `if-shell` condition is there because the symlink won't be there the very first time until tmux-dark-notify has run. **Remove any other** `source-file` for theme you have of course!
      ```conf
-     source-file ~/.local/state/tmux/tmux-dark-notify-theme.conf
+     if-shell "test -e ~/.local/state/tmux/tmux-dark-notify-theme.conf" \
+	      "source-file ~/.local/state/tmux/tmux-dark-notify-theme.conf"
      ```
    * Thus in summary, the relevant section of you `tmux.conf` could look like:
      ```conf
      set -g @plugin 'erikw/tmux-dark-notify'
      set -g @dark-notify-theme-path-light '$HOME/.repos/tmux-colors-solarized/tmuxcolors-light.conf'
      set -g @dark-notify-theme-path-dark '$HOME/.repos/tmux-colors-solarized/tmuxcolors-dark.conf'
-     source-file ~/.local/state/tmux/tmux-dark-notify-theme.conf
+     if-shell "test -e ~/.local/state/tmux/tmux-dark-notify-theme.conf" \
+	      "source-file ~/.local/state/tmux/tmux-dark-notify-theme.conf"
      ```
 3. Install the plugin with `<prefix>I`, unless you changed [tpm's keybindings](https://github.com/tmux-plugins/tpm#key-bindings).
 4. Try toggle the system's appearance mode from System Settings and see that the tmux theme is changing
