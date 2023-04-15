@@ -69,4 +69,4 @@ Hats off to [dark-notify](https://github.com/cormacrelf/dark-notify) which this 
 
 # More tmux plugins
 I have another tmux plugin that might interest you:
-* [tmux-powerline](https://github.com/erikw/tmux-powerline) - A tmux plugin giving you a hackable status bar consisting of dynamic & beautiful looking segments, written purely in bash.
+* [tmux-powerline](https://github.com/erikw/tmux-powerline) - A tmux plugin giving you a hackable status bar consisting of dynamic & beautiful looking powerline segments, written purely in bash.
