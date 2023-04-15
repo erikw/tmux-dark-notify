@@ -5,7 +5,7 @@
 [![OSS Lifecycle](https://img.shields.io/osslifecycle/erikw/tmux-dark-notify)](https://github.com/Netflix/osstracker)
 [![Latest tag](https://img.shields.io/github/v/tag/erikw/tmux-dark-notify)](https://github.com/erikw/tmux-powerline/tags)
 
-This [tpm](https://github.com/tmux-plugins/tpm) tmux plugin will change the tmux theme automatically when the system changes the light/dark mode. Configure a light and a dark theme and the plugin will take care of the rest!
+This tmux [tpm](https://github.com/tmux-plugins/tpm) plugin will change the tmux theme automatically when the system changes the light/dark mode. Configure a light and a dark theme and the plugin will take care of the rest!
 
 ![Demo of changing system theme](demo.gif)
 
