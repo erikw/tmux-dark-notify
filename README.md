@@ -65,3 +65,8 @@ Hats off to [dark-notify](https://github.com/cormacrelf/dark-notify) which this 
   * Open System Settings > Keyboard > Keyboard shortcuts (button) > Services
     * Find the `apperance_toggle` service we just created under the General category
     * Bind it to a shortcut e.g.  CTRL+OPT+CMD+t (this shortcut was used when feature first appeared in a beta version of macOS).
+
+
+# More tmux plugins
+I have another tmux plugin that might interest you:
+* [tmux-powerline](https://github.com/erikw/tmux-powerline) - A tmux plugin giving you a hackable status bar consisting of dynamic & beautiful looking segments, written purely in bash.
