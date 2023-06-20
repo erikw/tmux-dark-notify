@@ -30,7 +30,7 @@ Hats off to [dark-notify](https://github.com/cormacrelf/dark-notify) which this 
      ```conf
       set -g @plugin 'erikw/tmux-dark-notify'
      ```
-   * Now you must configure the paths for the light/dark themes you want to use. I personally have [seebi/tmux-colors-solarized](https://github.com/seebi/tmux-colors-solarized) installed as a TPM plugin. NOTE that in the tmux.conf any themes must be set up before tmux-dark-notify, otherwise they might override the theme set by thsi plugin. . Change the paths below to your themes.
+   * Now you must configure the paths for the light/dark themes you want to use. I personally have [seebi/tmux-colors-solarized](https://github.com/seebi/tmux-colors-solarized) installed as a TPM plugin. NOTE that in the tmux.conf any themes must be set up before tmux-dark-notify, otherwise they might override the theme set by this plugin. . Change the paths below to your themes.
      ```conf
      set -g @dark-notify-theme-path-light '$HOME/.config/tmux/plugins/tmux-colors-solarized/tmuxcolors-light.conf'
      set -g @dark-notify-theme-path-dark '$HOME/.config/tmux/plugins/tmux-colors-solarized/tmuxcolors-dark.conf'
