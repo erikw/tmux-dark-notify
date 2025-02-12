@@ -1,6 +1,6 @@
 # tmux-dark-notify - Make tmux's theme follow macOS dark/light mode 
 [![Top programming languages used](https://img.shields.io/github/languages/top/erikw/tmux-dark-notify)](#)
-[![SLOC](https://sloc.xyz/github/erikw/tmux-dark-notify)](#)
+[![SLOC](https://sloc.xyz/github/erikw/tmux-dark-notify?lower=true)](#)
 [![License](https://img.shields.io/github/license/erikw/tmux-dark-notify?color=informational)](LICENSE.txt)
 [![OSS Lifecycle](https://img.shields.io/osslifecycle/erikw/tmux-dark-notify)](https://github.com/Netflix/osstracker)
 [![Latest tag](https://img.shields.io/github/v/tag/erikw/tmux-dark-notify)](https://github.com/erikw/tmux-powerline/tags)
