@@ -79,6 +79,24 @@ Hats off to [dark-notify](https://github.com/cormacrelf/dark-notify) which this 
     * Find the `apperance_toggle` service we just created under the General category
     * Bind it to a shortcut e.g.  CTRL+OPT+CMD+t (this shortcut was used when feature first appeared in a beta version of macOS).
 
+# Development
+## Codespaces Devcontainer
+You can fork this project and then start coding right away with GitHub Codespaces as this project is set up to install all development dependencies and install tmux-dark-notify on the devcontainer. See [devcontainer.json](.devcontainer/devcontainer.json) and [devcontainer_postCreateCommand.sh](scripts/devcontainer_postCreateCommand.sh). After starting the devcontainer, just type `tmux` in the terminal and you should see a working tmux-dark-notify already to start playing with.
+
+Note: if you have set up your own dotfiles to be installed with GitHub Codespaces, and there was some tmux config files installed from your dotfiles to the devcontainer, then you might have to run this script to wipe your config in favour of the setup provided by this repo's initialization:
+
+```shell
+./scripts/devcontainer_postCreateCommand.sh
+```
+
+Note: there is no macOS host image for devcontainers, so we can't actually use dark-notify. However you can manually simulate the change of mode e.g. light->dark by calling the CLI script yourself.:
+
+```shell
+tmux # jump in to tmux
+./scripts/tmux-theme-mode.sh dark
+./scripts/tmux-theme-mode.sh light
+```
+and you will see how the tmux statusbar theme changes!
 
 # More tmux plugins
 I have another tmux plugin that might interest you:
