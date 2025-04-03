@@ -24,7 +24,7 @@ Hats off to [dark-notify](https://github.com/cormacrelf/dark-notify) which this 
 * macOS - dark-notify is only for mac
 * Bash
 * Homebrew
-* [dark-notify](https://github.com/cormacrelf/dark-notify) - `$ brew install dark-notify`
+* [dark-notify](https://github.com/cormacrelf/dark-notify) - `$ brew install cormacrelf/tap/dark-notify`
 * tmux
 * [tpm](https://github.com/tmux-plugins/tpm) - Tmux Plugin Manager
 
