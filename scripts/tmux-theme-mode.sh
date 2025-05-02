@@ -44,6 +44,13 @@ tmux_set_theme_mode() {
 	else
 		theme_path=$(tmux_get_option $OPTION_THEME_LIGHT)
 	fi
+
+  # NOTE: If the user specified the path with single quotes as
+  # `set @dark-notify-theme-path-light '$HOME/a/b/c` it will resolve as `\$HOME/a/b/c`
+  # here, to avoid that make sure the user uses double quotes in their `.tmux.conf`'s
+  # `"$HOME/a/b/c"` or else this script needs to sanitize that backslack for the `eval
+  # echo `"$theme_path"` to properly expand the environment variables.
+
 	# Expand e.g. $HOME
 	theme_path=$(eval echo "$theme_path")
 	if [ ! -r "$theme_path" ]; then

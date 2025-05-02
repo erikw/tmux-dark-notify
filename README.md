@@ -35,10 +35,10 @@ Hats off to [dark-notify](https://github.com/cormacrelf/dark-notify) which this 
      ```conf
       set -g @plugin 'erikw/tmux-dark-notify'
      ```
-   * Now you must configure the paths for the light/dark themes you want to use. I personally have [seebi/tmux-colors-solarized](https://github.com/seebi/tmux-colors-solarized) installed as a TPM plugin. NOTE that in the tmux.conf any themes must be set up before tmux-dark-notify, otherwise they might override the theme set by this plugin. . Change the paths below to your themes.
+   * Now you must configure the paths for the light/dark themes you want to use. I personally have [seebi/tmux-colors-solarized](https://github.com/seebi/tmux-colors-solarized) installed as a TPM plugin. NOTE that in the tmux.conf any themes must be set up before tmux-dark-notify, otherwise they might override the theme set by this plugin. . Change the paths below to your themes. *NOTE: If using environment variables in the `@dark-notify-theme-path-*` TPM options use double quotes for the plugin to deal with the variable expanded, otherwise it won't resolve.*
      ```conf
-     set -g @dark-notify-theme-path-light '$HOME/.config/tmux/plugins/tmux-colors-solarized/tmuxcolors-light.conf'
-     set -g @dark-notify-theme-path-dark '$HOME/.config/tmux/plugins/tmux-colors-solarized/tmuxcolors-dark.conf'
+     set -g @dark-notify-theme-path-light "$HOME/.config/tmux/plugins/tmux-colors-solarized/tmuxcolors-light.conf"
+     set -g @dark-notify-theme-path-dark "$HOME/.config/tmux/plugins/tmux-colors-solarized/tmuxcolors-dark.conf"
      ```
    * To cover some corner cases e.g. if you use the plugin [tmux-reset](https://github.com/hallazzang/tmux-reset) or another TPM plugin sets the theme itself, I recommend adding this explicit source of the theme as well as a fallback in case this plugin is not run in all scenarios. The `if-shell` condition is there because the symlink won't be there the very first time until tmux-dark-notify has run. It should be placed after TPM is initialized, because the ordering of plugin initialization is not guaranteed. **Remove any other** `source-file` for theme you have of course!
      ```conf
@@ -54,8 +54,8 @@ Hats off to [dark-notify](https://github.com/cormacrelf/dark-notify) which this 
      set -g @plugin 'seebi/tmux-colors-solarized'
      set -g @plugin 'erikw/tmux-dark-notify'
 
-     set -g @dark-notify-theme-path-light '$HOME/.config/tmux/plugins/tmux-colors-solarized/tmuxcolors-light.conf'
-     set -g @dark-notify-theme-path-dark '$HOME/.config/tmux/plugins/tmux-colors-solarized/tmuxcolors-dark.conf'
+     set -g @dark-notify-theme-path-light "$HOME/.config/tmux/plugins/tmux-colors-solarized/tmuxcolors-light.conf"
+     set -g @dark-notify-theme-path-dark "$HOME/.config/tmux/plugins/tmux-colors-solarized/tmuxcolors-dark.conf"
 
      [...]
      run-shell '~/.config/tmux/plugins/tpm/tpm' # Or however you source tpm.
