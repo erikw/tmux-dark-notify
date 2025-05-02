@@ -1,8 +1,7 @@
 {
 	"features": {
 		"ghcr.io/devcontainers-extra/features/apt-get-packages:1": {
-			"version": "latest",
-			"packages": "tmux" // There's no macOS host image, so can't install dark-notify.
+			"packages": ["tmux"] // There's no macOS host image, so can't install dark-notify.
 		}
 	},
 	"postCreateCommand": "bash scripts/devcontainer_postCreateCommand.sh",
