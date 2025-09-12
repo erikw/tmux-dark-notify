@@ -1,4 +1,4 @@
-# tmux-dark-notify - Make tmux's theme follow macOS dark/light mode 
+# tmux-dark-notify - Make Tmux's Theme Follow macOS Dark/Light Mode 
 [![Top programming languages used](https://img.shields.io/github/languages/top/erikw/tmux-dark-notify)](#)
 [![SLOC](https://sloc.xyz/github/erikw/tmux-dark-notify?lower=true)](#)
 [![License](https://img.shields.io/github/license/erikw/tmux-dark-notify?color=informational)](LICENSE.txt)
@@ -103,6 +103,6 @@ tmux # jump in to tmux
 ```
 and you will see how the tmux statusbar theme changes!
 
-# More tmux plugins
+# More Tmux Plugins
 I have another tmux plugin that might interest you:
 * [tmux-powerline](https://github.com/erikw/tmux-powerline) - A tmux plugin giving you a hackable status bar consisting of dynamic & beautiful looking powerline segments, written purely in bash.
