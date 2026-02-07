@@ -67,7 +67,7 @@ mode="$1"
 if [[ -z "$mode" ]]; then
 	echo "Missing required argument 'mode'." >&2
 	exit 1
-elif [[ "$mode" != light ]] && [[ "$1" != dark ]]; then
+elif [[ "$mode" != light ]] && [[ "$mode" != dark ]]; then
 	echo "Mode must be 'light' or 'dark'." >&2
 	exit 2
 fi
