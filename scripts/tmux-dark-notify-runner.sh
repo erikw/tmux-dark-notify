@@ -14,7 +14,7 @@ program_is_in_path() {
 	type "$1" >/dev/null 2>&1
 }
 
-if pgrep -qf "$SCRIPT_NAME"; then
+if pgrep -f "$SCRIPT_NAME" | grep -qv "^$$\$"; then
 	echo "$SCRIPT_NAME is already running, nothing to do here."
 	exit 0
 fi
